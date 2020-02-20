@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400|Poppins:400");
+
+html {
+  font-size: 100%;
+} /*16px*/
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #333;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 1.15rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052em;
+}
+
+h2 {
+  font-size: 2.441em;
+}
+
+h3 {
+  font-size: 1.953em;
+}
+
+h4 {
+  font-size: 1.563em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+small,
+.text_small {
+  font-size: 0.8em;
+}
+
+.main-container {
+  /* width: 75%;
+  margin: 0 auto; */
+}
+
+/* navigation */
+.navlist {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+.navlist__item {
+  /* margin-left: 2rem; */
+  flex: 10%;
+
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.navlist__item:first-child {
+  flex: 80%;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+/* hero card on front page */
+.main-hero {
+  height: 600px;
+  background-image: url("../images/bigdog.jpg");
+  background-position: top center;
+  padding-left: 1rem;
+}
+
+.main-hero__title {
+  color: white;
+  padding-top: 3rem;
+  margin-bottom: 0;
+}
+
+.main-hero__subtitle {
+  color: white;
+  margin-top: 0;
+  font-size: large;
+}
+/* article text on index */
+.index-text-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.index-text__header {
+  font-size: large;
+  font-weight: bold;
+}
+
+.index-text__text {
+  color: #495057;
+}
+
+/* index search form */
+.search-form-container {
+  background-color: #4c78bf;
+  border: solid 1px #5584db;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #000;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: -5rem;
+  padding-top: 1rem;
+}
+
+.search-form {
+  font-size: 1.5rem;
+  font-family: "Poppins";
+  padding: 0.25rem;
+}
+
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  padding: inherit;
+}
+.search-form__input {
+  display: block;
+  width: 90%;
+  margin: 1rem auto;
+}
+
+.search-form__button {
+  display: block;
+  margin: 1rem auto;
+  background-color: #1f314f;
+  color: white;
+  border: none;
+  padding: 0.25rem 2rem;
+}
+
+@media (max-width: 1100px) {
+  .search-form-container {
+    width: 90%;
+  }
+
+  .index-text-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 700px) {
+  .search-form-container {
+    width: 90%;
+    border-radius: 0;
+    margin-top: 0;
+  }
+
+  .main-hero {
+    background-image: none;
+    background-color: gray;
+    height: 30%;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+}
