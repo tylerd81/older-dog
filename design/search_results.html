@@ -1,62 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search for an older pet</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Search for an older pet</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-  <header>
-    <nav>
-      <ul class="navlist">
-        <li class="navlist-item">older.dog</li>
-        <li class="navlist-item">About</li>
-        <li class="navlist-item">Contact</li>
-      </ul>
-    </nav>
-  </header>
-
-  <div class="main-container">
-    <main>
-      <div class="content-container ">
-        <h2 class="search-results-header">Search Results for 12303</h2>
-        <h3 class="search-results-count">47 results found</h3>
-
-        <ul class="search-result-list">
-          <li class="search-result-list-item">
-            <h3 class="small-title center margin-1">Sarge</h3>
-            <img src="images/kitty.jpeg" width="250" height="250" alt="" class="result-image" />
-            <p class="result-about-text">Lorem ipsum dolor sit.</p>
-            <button type="button" class="result-button">Learn More</button>
-          </li>
-
-          <li class="search-result-list-item">
-            <h3 class="small-title center margin-1">Sarge</h3>
-            <img src="images/dog1_small.jpeg" width="250" height="250" alt="" class="result-image" />
-            <p class="result-about-text">Lorem ipsum dolor sit.</p>
-            <button type="button" class="result-button">Learn More</button>
-          </li>
-
-          <li class="search-result-list-item">
-            <h3 class="small-title center margin-1">Sarge</h3>
-            <img src="images/doggy1.jpeg" width="250" height="250" alt="" class="result-image" />
-            <p class="result-about-text">Lorem ipsum dolor sit.</p>
-            <button type="button" class="result-button">Learn More</button>
-          </li>
-
-          <li class="search-result-list-item">
-            <h3 class="small-title center margin-1">Sarge</h3>
-            <img src="images/kitty.jpeg" width="250" height="250" alt="" class="result-image" />
-            <p class="result-about-text">Lorem ipsum dolor sit.</p>
-            <button type="button" class="result-button">Learn More</button>
-          </li>
+  <body>
+    <header>
+      <nav>
+        <ul class="navlist">
+          <li><a href="index.html">older.dog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="active"><a href="contact.html">Contact</a></li>
         </ul>
-      </div>
-    </main>
-  </div>
-</body>
+      </nav>
+    </header>
 
+    <div class="main-container">
+      <main>
+        <h1 class="page-title">47 Results Found</h1>
+        <ul class="search-result-list">
+          <li class="search-result-item">
+            <h2 class="pet-name">Sarge</h2>
+            <img
+              src="images/kitty.jpeg"
+              height="300"
+              width="300"
+              alt="meow"
+              class="pet-image center"
+            />
+            <h3 class="pet-subtitle">6 Year Old Cat</h3>
+            <a href="details.html" class="adoption-link">Learn More</a>
+          </li>
+          <li class="search-result-item">
+            <h2 class="pet-name">Turnip</h2>
+            <img
+              src="images/dog1_small.jpeg"
+              height="300"
+              width="300"
+              alt="meow"
+              class="pet-image center"
+            />
+            <h3 class="pet-subtitle">6 Year Old Cat</h3>
+            <a href="details.html" class="adoption-link">Learn More</a>
+          </li>
+          <li class="search-result-item">
+            <h2 class="pet-name">Biscuit</h2>
+            <img
+              src="images/doggy1.jpeg"
+              height="300"
+              width="300"
+              alt="meow"
+              class="pet-image center"
+            />
+            <h3 class="pet-subtitle">6 Year Old Cat</h3>
+            <a href="details.html" class="adoption-link">Learn More</a>
+          </li>
+          <li class="search-result-item">
+            <h2 class="pet-name">Moses</h2>
+            <img
+              src="images/doggy3.jpeg"
+              height="300"
+              width="300"
+              alt="meow"
+              class="pet-image center"
+            />
+            <h3 class="pet-subtitle">6 Year Old Cat</h3>
+            <a href="details.html" class="adoption-link">Learn More</a>
+          </li>
+          <li class="search-result-item"></li>
+          <li class="search-result-item"></li>
+        </ul>
+      </main>
+    </div>
+  </body>
 </html>

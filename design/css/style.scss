@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+$main-text-color: #fff;
+$alt-text-color: #bdbdbd;
+$main-bg-color: #15151e;
+$accent-color: #ed81a8;
+$results-container-color: #575d6c;
+$link-color: #5584db;
+$nav-link-color: #fff;
+$nav-bg-color: $main-bg-color;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins";
+  background-color: $main-bg-color;
+}
+
+.navlist {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem;
+  margin: 0;
+  color: $nav-link-color;
+  background-color: $nav-bg-color;
+  li {
+    flex: 1;
+    margin: 0 0.5rem;
+
+    a {
+      color: $nav-link-color;
+      text-decoration: none;
+      &:visited {
+        color: $nav-link-color;
+      }
+    }
+    &.active {
+      a {
+        color: $accent-color;
+      }
+    }
+  }
+
+  li:first-child {
+    flex: 2;
+    text-align: left;
+  }
+}
+
+.main-container {
+  padding: 1rem;
+
+  .page-subtitle {
+    margin: 1.5rem 0;
+  }
+  .page-title {
+    margin: 1rem 0;
+  }
+  p {
+    color: $alt-text-color;
+    font-size: 1rem;
+  }
+
+  a {
+    color: $nav-link-color;
+    text-decoration: none;
+    &:visited {
+      color: $nav-link-color;
+    }
+    &.adoption-link {
+      display: block;
+      text-align: center;
+      border: solid 1px $accent-color;
+      padding: 0.25rem 1rem;
+      border-radius: 5px;
+      margin-top: 1rem;
+      &:hover {
+        background-color: $accent-color;
+      }
+    }
+  }
+}
+
+.pet-image {
+  border-radius: 5px;
+  &.center {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+  }
+}
+
+.upper-container {
+  background-image: url("../images/main-page-dog-mobile.jpg");
+
+  height: 50vh;
+  background-size: cover;
+  background-position: top center;
+}
+
+.opacity-layer {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.page-title {
+  color: $main-text-color;
+}
+
+.center-title {
+  text-align: center;
+}
+
+.accent-title {
+  color: $accent-color !important;
+}
+.page-subtitle {
+  color: $main-text-color;
+  font-size: 1.25rem;
+}
+
+.lower-container {
+  padding: 1em;
+
+  height: 50vh;
+
+  p {
+    color: $alt-text-color;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .main-page-subtitle {
+    color: $accent-color;
+  }
+}
+
+.search-container {
+  input,
+  button {
+    width: 100%;
+    font-family: inherit;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  input {
+    padding: 0.25rem;
+  }
+
+  button {
+    border: none;
+    color: white;
+    background-color: $accent-color;
+    padding: 0.25rem;
+  }
+}
+
+.search-result-list {
+  list-style-type: none;
+
+  li {
+    background-color: $results-container-color;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    .adoption-link {
+      background-color: $accent-color;
+      color: $main-bg-color;
+
+      margin: 0 auto;
+    }
+    .pet-name {
+      color: $main-text-color;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .pet-subtitle {
+      color: $main-text-color;
+      text-align: center;
+      margin: 1rem;
+      font-weight: normal;
+    }
+  }
+}

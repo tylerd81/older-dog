@@ -1,155 +1,208 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
-
-:root {
-  --navlist-bg-color: white;
-
-  --text-color: #5d5a86;
-  --hero-bg-color-mobile: #333;
-  --main-hero-text-color: white;
-
-  --search-form-bg-color: #4c78bf;
-  --search-form-border-color: #5584db;
-  --search-button-bg-color: #1f314f;
-  --search-button-border-color: #667184;
-}
-
 * {
-  box-sizing: border-box;
-}
-body {
-  font-family: "Poppins";
-  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-p {
-  color: var(--text-color);
-  font-size: 1rem;
+body {
+  font-size: 16px;
+  font-family: "Poppins";
+  background-color: #15151e;
 }
 
 .navlist {
-  display: flex;
-  justify-content: flex-end;
   list-style-type: none;
-  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0.5rem;
   margin: 0;
-  background-color: var(--navlist-bg-color);
+  color: #fff;
+  background-color: #15151e;
 }
 
 .navlist li {
-  color: var(--text-color);
-  margin: 0 1rem;
-  flex: 1;
-  text-align: right;
-  font-size: 1.2rem;
-  font-weight: bold;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 0.5rem;
+}
+
+.navlist li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navlist li a:visited {
+  color: #fff;
+}
+
+.navlist li.active a {
+  color: #ed81a8;
 }
 
 .navlist li:first-child {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
   text-align: left;
-  flex: 4;
 }
 
-.main-page-hero {
-  height: 500px;
-  background-image: url("../images/bigdog.jpg");
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
+.main-container {
   padding: 1rem;
 }
 
-.main-page-hero h1,
-.main-page-hero h2 {
-  color: var(--main-hero-text-color);
-  margin: 0;
+.main-container .page-subtitle {
+  margin: 1.5rem 0;
 }
 
-.main-page-hero h1 {
-  font-size: 3rem;
-}
-.main-page-hero h2 {
-  font-size: 1.5rem;
-  font-weight: normal;
+.main-container .page-title {
+  margin: 1rem 0;
 }
 
-.main-page-container {
-  /* width: 55%; */
-  width: 60%;
-  max-width: 900px;
+.main-container p {
+  color: #bdbdbd;
+  font-size: 1rem;
+}
+
+.main-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-container a:visited {
+  color: #fff;
+}
+
+.main-container a.adoption-link {
+  display: block;
+  text-align: center;
+  border: solid 1px #ed81a8;
+  padding: 0.25rem 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.main-container a.adoption-link:hover {
+  background-color: #ed81a8;
+}
+
+.pet-image {
+  border-radius: 5px;
+}
+
+.pet-image.center {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.upper-container {
+  background-image: url("../images/main-page-dog-mobile.jpg");
+  height: 50vh;
+  background-size: cover;
+  background-position: top center;
+}
+
+.opacity-layer {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.page-title {
+  color: #fff;
+}
+
+.center-title {
+  text-align: center;
+}
+
+.accent-title {
+  color: #ed81a8 !important;
+}
+
+.page-subtitle {
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.lower-container {
+  padding: 1em;
+  height: 50vh;
+}
+
+.lower-container p {
+  color: #bdbdbd;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.lower-container .main-page-subtitle {
+  color: #ed81a8;
+}
+
+.search-container input,
+.search-container button {
+  width: 100%;
+  font-family: inherit;
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.search-container input {
+  padding: 0.25rem;
+}
+
+.search-container button {
+  border: none;
+  color: white;
+  background-color: #ed81a8;
+  padding: 0.25rem;
+}
+
+.search-result-list {
+  list-style-type: none;
+}
+
+.search-result-list li {
+  background-color: #575d6c;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.search-result-list li .adoption-link {
+  background-color: #ed81a8;
+  color: #15151e;
   margin: 0 auto;
 }
 
-.search-form-container {
-  border: solid 1px var(--search-form-border-color);
-  background-color: var(--search-form-bg-color);
-  /* height: 10rem; */
-  margin-top: -6rem;
-  margin-bottom: 2rem;
-  border-radius: 10px;
-  padding: 1rem 2rem;
-  box-shadow: 0 5px 20px 0 #868686;
-  font-size: 1.5rem;
+.search-result-list li .pet-name {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-input,
-button {
-  font-size: inherit;
-  font-family: inherit;
+.search-result-list li .pet-subtitle {
+  color: #fff;
+  text-align: center;
+  margin: 1rem;
+  font-weight: normal;
 }
-
-input {
-  display: block;
-  width: 100%;
-  margin: 1rem auto 0 auto;
-  padding: 0.5rem;
-}
-
-.button-container {
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 1rem;
-}
-.search-form-button {
-  color: white;
-  background-color: var(--search-button-bg-color);
-  border: solid 1px var(--search-button-border-color);
-  padding: 0.5rem 4rem;
-  margin: 1rem auto;
-}
-
-.search-form-button:hover {
-  background-color: #303b4e;
-}
-@media (max-width: 1200px) {
-  .main-page-container {
-    width: 80%;
-  }
-}
-
-@media (max-width: 900px) {
-  .main-page-container {
-    width: 100%;
-    padding: 1rem;
-  }
-  .main-page-hero {
-    height: auto;
-    margin-bottom: 0;
-    background-color: var(--hero-bg-color-mobile);
-    background-image: none;
-  }
-
-  .search-form-container {
-    margin: 0;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-  }
-  .button-container {
-    display: block;
-  }
-
-  .search-form-button {
-    width: 100%;
-  }
-}
+/*# sourceMappingURL=style.css.map */
